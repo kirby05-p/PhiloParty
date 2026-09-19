@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're Invited</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-anim"></div>
+<div class="disco" id="disco"></div>
+<audio id="bgMusic" src="music.mp3" loop preload="none"></audio>
+<div class="music-control" id="musicControl">
+  <button class="music-btn" id="muteBtn" aria-label="Mute music">🔊</button>
+  <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.05" value="0.6" aria-label="Music volume">
+</div>
+
+<!-- ===== HERO / ENVELOPE + LETTER ===== -->
+<section id="hero">
+  <div class="stage" id="stage">
+    <div class="envelope-wrap" id="envWrap" role="button" tabindex="0" aria-label="Open your invitation">
+      <div class="envelope">
+        <div class="env-body"></div>
+        <div class="env-flap" id="flap"></div>
+        <div class="seal"></div>
+      </div>
+      <p class="tap-hint" id="tapHint">tap the envelope to start the party</p>
+    </div>
+
+    <div class="letter" id="letter">
+      <h1 class="invite-line">YOU'RE INVITED<br>TO A PARTY</h1>
+      <p class="letter-p">The social aspect of the human person refers to our natural need and capacity to connect, communicate, and form relationships with others. Humans are not isolated beings; our identities, values, and beliefs are shaped through our interactions and communities. While these connections give us belonging and help us grow, they can also influence us to conform to social expectations. Thus, being social involves balancing our need for connection with our need for individuality and authenticity.</p>
+      <p class="letter-p">Our party invitation represents this idea because a party only exists because there are people to gather. The invitation symbolizes our human desire to be included, recognized, and connected to others. The different things featured in the invitation — social media, dating apps, TikTok, SHEIN, Shopee, Lazada, trends like Labubu and the Dubai chewy cookie — represent the many modern spaces where people seek connection and belonging.</p>
+      <p class="tap-card-hint" id="letterHint">the party has started ✨</p>
+      <div class="scroll-cue"><span></span>scroll</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CAMERA EXPERIENCE ===== -->
+<section id="cameraSection">
+  <div class="sticky-stage">
+
+    <div class="cam-scale-wrap" id="camScaleWrap">
+    <div class="camera-3d" id="camera3d">
+      <!-- FRONT FACE -->
+      <div class="cam-face cam-front">
+        <div class="cam-front-body">
+          <div class="sticker sticker-star">★</div>
+          <div class="sticker sticker-heart">♥</div>
+          <div class="cam-top-strip">
+            <div class="shutter-btn"></div>
+            <div class="mode-slider"></div>
+          </div>
+          <div class="cam-flash"></div>
+          <div class="cam-lens-ring-outer">
+            <div class="cam-lens-ring-mid">
+              <div class="cam-lens-ring-inner">
+                <div class="cam-lens-glass"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cam-brand-strip">social&nbsp;•&nbsp;cam</div>
+        </div>
+        <button class="start-btn" id="startBtn">START</button>
+      </div>
+
+      <!-- BACK FACE -->
+      <div class="cam-face cam-back">
+        <div class="cam-back-body">
+          <div class="lcd-screen">
+            <div class="lcd-photo-wrap">
+              <div class="photo-frame">
+                <img alt="" id="slideImg">
+                <div class="photo-fallback" id="slideFallback">[ add images/1.png ]</div>
+              </div>
+              <p class="lcd-caption" id="slideCaption"></p>
+            </div>
+            <div class="lcd-index" id="lcdIndex">1 / 10</div>
+          </div>
+
+          <div class="cam-controls-col">
+            <div class="zoom-rocker">
+              <button class="zoom-btn" id="zoomT" aria-label="Next">T</button>
+              <div class="zoom-line"></div>
+              <button class="zoom-btn" id="zoomW" aria-label="Previous">W</button>
+            </div>
+            <button class="round-btn playback-btn" id="playbackBtn" aria-label="Autoplay">▶</button>
+            <div class="dpad">
+              <span class="dpad-icon dpad-top">☺</span>
+              <span class="dpad-icon dpad-right">DISP</span>
+              <span class="dpad-icon dpad-bottom">⏱</span>
+              <span class="dpad-icon dpad-left">⚡</span>
+              <button class="round-btn dpad-center" id="okBtn">OK</button>
+            </div>
+            <div class="bottom-row">
+              <button class="pill-btn" id="menuBtn">MENU</button>
+              <button class="pill-btn" id="trashBtn">?/🗑</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CLOSING ===== -->
+<section id="party">
+  <div class="decor">
+    <div class="props-row">
+      <div class="hat"></div>
+      <div class="streamer"></div>
+      <div class="hat hat-cyan"></div>
+    </div>
+    <div class="closing">
+      <h2>To end this, we leave you with this question:<br>.<br>.<br>.</h2>
+      <p>Pwede magtanong?</p>
+      <p>Never grow old!!?</p>
+      <p>[Serious] Are we socializing because we genuinely want to connect, or because we are afraid of being left outside the party?</p>
+      <p class="tag">Bernardo, Demegillo, Peralta, Rivera</p>
+    </div>
+  </div>
+</section>
+<div id="pageEnd"></div>
+
+<footer class="ai-footer">
+  Declaration of AI use: Claude AI was used in helping with the design of the website. All the content and ideas used are from the members of the group.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
